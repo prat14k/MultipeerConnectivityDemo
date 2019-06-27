@@ -15,6 +15,7 @@
 		AB19B0E322C4D4E900ADE7DE /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB19B0E222C4D4E900ADE7DE /* Model.swift */; };
 		AB19B0E522C4D87D00ADE7DE /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB19B0E422C4D87D00ADE7DE /* UserTableViewCell.swift */; };
 		AB19B0E722C4DDAD00ADE7DE /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB19B0E622C4DDAD00ADE7DE /* FormViewController.swift */; };
+		AB19B0E922C4F1CB00ADE7DE /* MCManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB19B0E822C4F1CB00ADE7DE /* MCManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		AB19B0E222C4D4E900ADE7DE /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		AB19B0E422C4D87D00ADE7DE /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		AB19B0E622C4DDAD00ADE7DE /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
+		AB19B0E822C4F1CB00ADE7DE /* MCManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				AB19B0E222C4D4E900ADE7DE /* Model.swift */,
 				AB19B0E422C4D87D00ADE7DE /* UserTableViewCell.swift */,
 				AB19B0E622C4DDAD00ADE7DE /* FormViewController.swift */,
+				AB19B0E822C4F1CB00ADE7DE /* MCManager.swift */,
 			);
 			path = MultipeerConnectivityDemo;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 				AB19B0D322C4D3FE00ADE7DE /* ViewController.swift in Sources */,
 				AB19B0E722C4DDAD00ADE7DE /* FormViewController.swift in Sources */,
 				AB19B0D122C4D3FE00ADE7DE /* AppDelegate.swift in Sources */,
+				AB19B0E922C4F1CB00ADE7DE /* MCManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

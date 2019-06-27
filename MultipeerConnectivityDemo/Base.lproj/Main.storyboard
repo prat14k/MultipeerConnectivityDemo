@@ -44,14 +44,26 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CJC-XY-YRX">
+                                            <rect key="frame" x="349" y="59" width="40" height="35"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="35" id="ye4-eN-hCz"/>
+                                            </constraints>
+                                            <state key="normal" title="Share"/>
+                                            <connections>
+                                                <action selector="shareUser" destination="VjG-YW-gTc" eventType="touchUpInside" id="wDb-kf-bme"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <constraints>
                                         <constraint firstAttribute="trailing" secondItem="711-g7-hJ6" secondAttribute="trailing" constant="15" id="C8Z-Hk-IzV"/>
                                         <constraint firstItem="7fZ-Bv-Z6t" firstAttribute="leading" secondItem="Au0-xX-2Bh" secondAttribute="leading" id="CJa-jX-wF6"/>
                                         <constraint firstItem="711-g7-hJ6" firstAttribute="top" secondItem="exx-OH-loq" secondAttribute="top" constant="12" id="PQn-fL-MJN"/>
                                         <constraint firstItem="7fZ-Bv-Z6t" firstAttribute="top" secondItem="Au0-xX-2Bh" secondAttribute="bottom" constant="8" id="UtS-FG-CnZ"/>
+                                        <constraint firstItem="CJC-XY-YRX" firstAttribute="trailing" secondItem="Au0-xX-2Bh" secondAttribute="trailing" constant="-10" id="VPg-Zk-YMn"/>
                                         <constraint firstItem="Au0-xX-2Bh" firstAttribute="leading" secondItem="711-g7-hJ6" secondAttribute="leading" id="Ycn-5j-pmM"/>
                                         <constraint firstItem="Au0-xX-2Bh" firstAttribute="top" secondItem="711-g7-hJ6" secondAttribute="bottom" constant="5" id="bhH-7i-3Aj"/>
+                                        <constraint firstItem="CJC-XY-YRX" firstAttribute="centerY" secondItem="7fZ-Bv-Z6t" secondAttribute="centerY" id="cGz-61-3hd"/>
                                         <constraint firstItem="711-g7-hJ6" firstAttribute="leading" secondItem="exx-OH-loq" secondAttribute="leadingMargin" id="cKB-Ha-dny"/>
                                         <constraint firstAttribute="bottom" secondItem="7fZ-Bv-Z6t" secondAttribute="bottom" constant="12" id="ish-I5-RTi"/>
                                         <constraint firstItem="Au0-xX-2Bh" firstAttribute="trailing" secondItem="711-g7-hJ6" secondAttribute="trailing" id="yss-pl-ZoK"/>
@@ -70,6 +82,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="M49-Y7-aga">
+                        <barButtonItem key="leftBarButtonItem" title="Connect" id="Wcv-R3-q2W">
+                            <connections>
+                                <action selector="configureSession" destination="SFk-rJ-98X" id="aVC-Xi-zwz"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="xxS-Bo-o5X">
                             <connections>
                                 <segue destination="haM-xP-cT5" kind="presentation" modalPresentationStyle="overFullScreen" modalTransitionStyle="crossDissolve" id="Kqu-K3-QxH"/>

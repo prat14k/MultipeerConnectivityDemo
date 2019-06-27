@@ -8,10 +8,14 @@
 
 import UIKit
 
+protocol UserTableViewCellProtocol: class {
+    func didRequestShare(_ cell: UserTableViewCell)
+}
+
 class UserTableViewCell: UITableViewCell {
     
     static let identifier = "userCell"
-    
+    weak var delegate: UserTableViewCellProtocol?
     @IBOutlet weak private var nameLbl: UILabel!
     @IBOutlet weak private var addressLbl: UILabel!
     @IBOutlet weak private var playsFifaLbl: UILabel!
@@ -22,4 +26,7 @@ class UserTableViewCell: UITableViewCell {
         playsFifaLbl.textColor = user.playsFifa ? UIColor.green : UIColor.lightGray
     }
     
+    @IBAction private func shareUser() {
+        delegate?.didRequestShare(self)
+    }
 }
